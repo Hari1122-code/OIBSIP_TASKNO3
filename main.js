@@ -47,7 +47,7 @@ function add_todo(event) {
     let ele2 = document.getElementById("discription");
     let title_val = ele1.value;
     let discription_val = ele2.value;
-    discription_val = discription_val.replaceAll("\n", "<br/>")
+    discription_val = discription_val.replaceAll("\n", "<br>")
     ele1.value = '';
     ele2.value = '';
     let item = document.createElement("div"); // creating div item
@@ -140,7 +140,8 @@ function add_todo(event) {
             let el1 = document.getElementById("title");
             let el2 = document.getElementById("discription");
             el1.value = title.innerHTML
-            el2.value = discription.innerHTML
+            var discription_edit = discription.innerHTML.replaceAll( "<br>","\n")
+            el2.value = discription_edit
             var add = document.getElementById("add");
             add.classList.add("hide")
             var modify = document.getElementById("modify");
@@ -151,7 +152,8 @@ function add_todo(event) {
             modify.onclick = function () {
                 title.innerHTML = el1.value
                 el1.value = ""
-                discription.innerHTML = el2.value
+                var discription_modify = el2.value.replaceAll( "\n","<br>")
+                discription.innerHTML = discription_modify
                 el2.value = ""
                 modify.classList.add("hide")
                 add.classList.remove("hide");
