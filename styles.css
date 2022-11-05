@@ -1,0 +1,393 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ACFFAD;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #50CB93;
+    height: 5rem;
+    width: inherit;
+}
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.icon {
+    margin: 0 8% 0 5%;
+    width: 5%;
+    height: inherit;
+    background-color: transparent;
+    border: none;
+}
+.logo h1 {
+    margin-right: 5%;
+}
+/* Todo-List */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin: 3rem auto 0 auto;
+}
+.todolist {
+    background-color: #71EFA3;
+    height: 530px;
+    border-radius: 10px;
+    width: 65%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 15px 5px;
+    background-color: #50CB93;
+    height: 8%;
+}
+.one {
+    flex: 0.375;
+}
+.two {
+    flex: 1.875;
+}
+.three {
+    flex: 4.875;
+}
+.four {
+    flex: 1.25;
+}
+.five {
+    flex: 0.625;
+}
+.six {
+    flex: 0.625;
+}
+h2 {
+    margin: auto;
+    font-size: 1.4rem;
+}
+/* Data-Entry */
+.dataentry {
+    width: 30%;
+    height: 100%;
+    margin: 2rem ;
+    padding: 1rem;
+    background-color: transparent !important;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+#inputs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 25px;
+    margin: auto;
+    text-align: center;
+}
+#title {
+    margin: 20px auto;
+    height: 35px;
+    width: 50%;
+    font-size: 1.2rem;
+    border: none;
+    border: 5px;
+    text-align: center;
+}
+#discription {
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+    resize: none;
+    border: none;
+    margin: 10px auto 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-color: black;
+}
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+#add,
+#modify {
+    margin: 20px auto;
+    height: 30px;
+    width: 20%;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(13, 135, 48);
+    border: none;
+    transition: opacity 0.15s;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.6);
+}
+#add:hover {
+    background-color: #2c974b;
+    opacity: 0.8;
+}
+#add:active {
+    background-color: #298e46;
+    opacity: 0.5;
+}
+.review {
+    display: flex;
+}
+.todo_btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.review_nav {
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+}
+.review_clone {
+    display: none;
+}
+.review-btn {
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    background-color: #71EFA3;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+.review-btn:hover {
+    background-color: #2c974b;
+    opacity: 0.8;
+
+}
+.review-btn:active {
+    opacity: 0.5;
+}
+/* todo data */
+.item,
+.item_pending,
+.item_completed {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    padding: 0px 5px;
+    position: relative;
+    right: 0%;
+    animation-name: anime;
+    animation-duration: 1s;
+    margin: 15px auto;
+}
+@keyframes anime {
+    0% {
+        right: 5%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+.un-tog{
+    width: 75%;
+    display: flex;
+    height: 100%;
+}
+.sno {
+    width: 5%;
+}
+.title-text {
+    width: 25%;
+    word-wrap: break-word;
+}
+.discription-text {
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    word-wrap: break-word;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: solid;
+    border-color: rgb(48, 46, 46);
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px 5px 5px 8px;
+    text-align: left;
+}
+.tog {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+.toggle {
+    width: 25%;    
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+.edit {
+    width: 25%;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+.remove {
+    width: 25%;
+    background-color: transparent;
+    border: none; 
+}
+.status,
+.status_p {
+    width: 50%;
+    margin: auto;
+    height: 30px;
+    background-color: #ACFFAD;
+    border-radius: 5px;
+    border: none;
+    font-weight: 550;
+}
+.title {
+    width: 30%;
+    margin: 10px;
+}
+.discription {
+    width: 100%;
+    height: auto;
+}
+/* display-hide */
+#todo-tasks,
+#completed-tasks,
+#pending-tasks {
+    display: none;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block !important;
+    max-height: 85%;
+    overflow: scroll;
+}
+.show::-webkit-scrollbar {
+    width: 0px;
+}
+@media(max-width:1024px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 15px 0 0 0;
+        align-items: center;
+    }
+    .todolist {
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .todo_btn,
+    .review {
+        display: none;
+    }
+    .dataentry {
+        width: 80%;
+        border-radius: 10px;
+        height: 100%;
+        min-height: 200px;
+        margin: 0 0 5px 0;
+        padding: auto;
+        background-color: #ACFFAD !important;
+    }
+    #inputs {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #title {
+        width: 35%;
+        margin: auto;
+    }
+    #discription {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        height: 200%;
+    }
+    #add,
+    #modify {
+        margin: auto;
+        margin-top: 10px;
+    }
+    .review_clone {
+        margin-top: 10px;
+        align-items: center;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:900px) {
+    body {
+        width: 100vw;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo h1 {
+        margin-right: 10%;
+    }
+    .logo {
+        width: 95%;
+        height: 2.8rem;
+    }
+    .review_nav {
+        display: none;
+    }
+}
+@media(max-width:650px) {
+    .item,.item_completed,.item_pending{
+        display: block;
+    }
+    .un-tog{
+        width: 98%; 
+    }
+    .toggle {
+        margin-top: 2%;
+        width: 55%;
+        margin-left: 45% ;
+    }
+    .title-text {
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+    .discription-text{
+        font-size: 1rem;
+    }
+    .one,.four,.five,.six{
+        display: none;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .review-btn{
+        font-size: 0.9rem;
+    }
+}

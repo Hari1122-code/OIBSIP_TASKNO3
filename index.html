@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c72563a722.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <button class="todo-List icon"><i class="fa-regular fa-calendar-check fa-3x"></i></button>
+      <h1>To-Do List</h1>
+    </div>
+    <div class="review_nav">
+      <button class="completed review-btn">Completed tasks</button>
+      <button class="todo-List review-btn">To-Do List</button>
+      <button class="pending review-btn">Pending tasks</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="todolist">
+      <div class="heading">
+        <h2 class="one">S.No</h2>
+        <h2 class="two">Title</h2>
+        <h2 class="three">Description</h2>
+        <h2 class="four">Status</h2>
+        <h2 class="five">Edit</h2>
+        <h2 class="six">Delete</h2>
+      </div>
+      <div id="todo-tasks" class="show">
+      </div>
+      <div id="completed-tasks">
+      </div>
+      <div id="pending-tasks">
+      </div>
+    </section>
+    <div class="review_clone">
+      <button class="completed review-btn">Completed tasks</button>
+      <button class="todo-List review-btn">To-Do List</button>
+      <button class="pending review-btn">Pending tasks</button>
+    </div>
+    <section class="dataentry">
+      <div id="inputs">
+        <input id="title" type="text" placeholder="Title">
+        <textarea id="discription" maxlength="260" placeholder="Type something here..." required></textarea>
+        <button id="add">Add</button>
+        <button id="modify" class="hide">Modify</button>
+        <div class="todo_btn">
+          <button class="todo-List review-btn">To-Do List</button>
+        </div>
+        <div class="review">
+          <button class="completed review-btn">Completed tasks</button>
+          <button class="pending review-btn">Pending tasks</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html> 
