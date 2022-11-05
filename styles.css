@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #50CB93;
-    height: 5rem;
+    height: 4rem;
     width: inherit;
 }
 .logo {
@@ -350,6 +350,7 @@ textarea::-webkit-scrollbar {
     .navbar {
         display: flex;
         flex-direction: column;
+        padding-top: 1rem;
     }
     .logo h1 {
         margin-right: 10%;
